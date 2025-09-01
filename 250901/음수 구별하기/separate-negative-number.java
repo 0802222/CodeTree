@@ -8,9 +8,9 @@ public class Main {
         int num = sc.nextInt();
         if (num >= 0) {
             System.out.println(num);
+        } else {
+            System.out.println(num);
+            System.out.println("minus");
         }
-        System.out.println(num);
-        System.out.println("minus");
-        
     }
 }
