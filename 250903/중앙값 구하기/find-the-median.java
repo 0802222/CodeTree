@@ -12,19 +12,25 @@ public class Main {
         int c = sc.nextInt();
 
         if (a > b) {
-            if (a < c) {
-                System.out.println(a);
-            } else {
-                System.out.println(c);
-            }
-        } else if (b > a) {
-            if (b < c) {
+            if (b > c) {             // 중간값 비교를 위해 b가 내려옴
                 System.out.println(b);
-            } else {
-                System.out.println(c);
+            } else {                 // b < c
+                if (a > c) {
+                    System.out.println(c);
+                } else {             // a < c
+                    System.out.println(a);
+                }
             }
-        } else {
-            System.out.println(c);
+        } else { // a < b
+            if (a > c) {
+                System.out.println(a);
+            } else {                 // a < c
+                if(b > c) {
+                System.out.println(c);
+                } else {             // b < c
+                System.out.println(b);
+                }
+            }
         }
     }
 }
