@@ -5,13 +5,12 @@ public class Main {
         int a = 5;
         int b = 6;
         int c = 7;
-        int temp1, temp2;
+        int temp;
 
-        temp1 = a;      // temp1 = 5
-        a = c;          // a = 7
-        temp2 = b;      // temp2 = 6
-        b = temp1;      // b = 5 
-        c = temp2;
+        temp = b;
+        b = a;
+        a = c;
+        c = temp;
 
         System.out.println(a); // 7
         System.out.println(b); // 5
