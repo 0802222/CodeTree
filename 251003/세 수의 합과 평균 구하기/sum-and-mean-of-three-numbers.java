@@ -11,10 +11,10 @@ public class Main {
         int c = sc.nextInt();
 
         int sum = a + b + c;
-        float avg = ((float)a + b + c) / 3;
+        int avg = (a + b + c) / 3;
 
         System.out.println(sum);
-        System.out.printf("%.0f", avg);
+        System.out.println(avg);
 
         sc.close();
     }
