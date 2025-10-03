@@ -9,12 +9,11 @@ public class Main {
         int n = sc.nextInt();
         int rectangleArea =  n * n;
 
+        System.out.println(rectangleArea);
+
         if (n < 5) {
-            System.out.println(rectangleArea);
             System.out.println("tiny");
-        } else {
-            System.out.println(rectangleArea);
-        }
+        } 
 
         sc.close();
     }
