@@ -6,7 +6,7 @@ public class Main {
         
         int n = sc.nextInt();
 
-        if (n < 10) {
+        if (n < 0) {
             System.out.println("ice");
         }
         else if (n >= 100) {
