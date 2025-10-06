@@ -11,8 +11,6 @@ public class Main {
         int bMath = sc.nextInt();
         int bEng = sc.nextInt();
 
-        int engHighScore = Math.max(aEng, bEng);
-
         if (aMath == bMath) {
             if (aEng > bEng) {
                 System.out.print("A");    
