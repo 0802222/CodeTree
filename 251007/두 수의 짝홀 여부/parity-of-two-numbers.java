@@ -12,14 +12,14 @@ public class Main {
         if (a % 2 == 0) {
             System.out.println("even");
         } 
-        else if (a % 2 == 1) {
+        else (a % 2 == 1) {
             System.out.println("odd");
         }
 
         if (b % 2 == 0) {
             System.out.println("even");
         } 
-        else if (b % 2 == 1) {
+        else (b % 2 == 1) {
             System.out.println("odd");
         }
 
