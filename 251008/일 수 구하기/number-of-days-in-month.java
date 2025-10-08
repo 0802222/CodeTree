@@ -10,8 +10,8 @@ public class Main {
         int n = sc.nextInt();
         int days = Month.of(n).length(false);
 
-        if (n % 4 != 0) {
-            System.out.println(days);
-        }
+        System.out.println(days);
+
+        sc.close();
     }
 }
