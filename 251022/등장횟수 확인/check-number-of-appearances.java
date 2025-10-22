@@ -7,7 +7,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int cnt = 0;
 
-        for (int i = 1; i < 5; i++) {
+        for (int i = 1; i <= 5; i++) {
             int n = sc.nextInt();
 
             if (n % 2 == 0) {
