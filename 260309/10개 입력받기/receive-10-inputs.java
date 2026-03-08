@@ -19,7 +19,7 @@ public class Main {
             count++;
         }
         double avg = (double) sum / count; 
-        System.out.print(sum + " " + avg);
+        System.out.printf("%d %.1f", sum, avg);
 
         sc.close();
     }
