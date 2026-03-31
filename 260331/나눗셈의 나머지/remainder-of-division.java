@@ -9,7 +9,7 @@ public class Main {
 
         int[] count = new int[B];
 
-        while(A >= 1) {
+        while(A > 1) {
             int r = A % B;
             count[r]++;
             A /= B;
