@@ -16,7 +16,7 @@ public class Main {
             arr[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < n - 2; i++) {
+        for (int i = 0; i < n - 1; i++) {
             diff = arr[i + 1] - arr[i];
             minDiff = Math.min(minDiff, diff);
         }
