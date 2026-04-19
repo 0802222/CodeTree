@@ -14,20 +14,19 @@ public class Main {
         for (int i = 0; i < n; i++) {
             carPrice[i] = sc.nextInt();
         }
-
+        
+        int minPrice = carPrice[0];
         int maxRevenue = 0;
 
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                int revenue = 0;
+        for (int i = 1; i < n; i++) {
+            int revenue = carPrice[i] - minPrice;
             
-                if (carPrice[i] != carPrice[n - 1]) {
-                    revenue = carPrice[j] - carPrice[i];
-                }
+            if (revenue > maxRevenue) {
+                maxRevenue = revenue;
+            }
 
-                if (maxRevenue < revenue) {
-                    maxRevenue = revenue;
-                }
+            if (carPrice[i] < minPrice) {
+                minPrice = carPrice[i];
             }
         }
         System.out.print(maxRevenue);
