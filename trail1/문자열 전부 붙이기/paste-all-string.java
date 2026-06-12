@@ -6,14 +6,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        String result = "";
+        StringBuilder sb = new StringBuilder();
         
         for (int i = 0; i < n; i++) {
-            String str = sc.next();
-            result += str;
+            sb.append(sc.next());
         }
 
-        System.out.print(result);
+        System.out.print(sb.toString());
         sc.close();
     }
 }
