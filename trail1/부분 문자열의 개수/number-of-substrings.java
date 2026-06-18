@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Please write your code here.
+
+        Scanner sc = new Scanner(System.in);
+        String A = sc.next();
+        String B = sc.next();
+
+        int count = 0;
+
+        for (int i = 0; i <= A.length() - B.length(); i++) {
+            String sub = A.substring(i, i + B.length());
+            if (sub.equals(B)) {
+                count++;
+            }
+        }
+        
+
+        System.out.println(count);
+        sc.close();
+    }
+}
