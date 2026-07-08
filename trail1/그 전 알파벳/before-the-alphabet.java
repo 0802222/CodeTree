@@ -12,7 +12,7 @@ public class Main {
             next = 'z';
         }
 
-        System.out.println(next);
+        System.out.println(next); 
 
         sc.close();
     }
